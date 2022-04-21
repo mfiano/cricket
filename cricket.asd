@@ -2,7 +2,7 @@
   :description "A library for generating and manipulating coherent noise"
   :author "Michael Fiano <mail@mfiano.net>"
   :license "MIT"
-  :homepage "https://github.com/mfiano/cricket"
+  :homepage "https://git.mfiano.net/mfiano/cricket"
   :version "0.1.0"
   :encoding :utf-8
   :depends-on (#:arrow-macros

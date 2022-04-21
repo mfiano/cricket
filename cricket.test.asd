@@ -2,7 +2,7 @@
   :description "Tests for cricket."
   :author "Michael Fiano <mail@mfiano.net>"
   :license "MIT"
-  :homepage "https://github.com/mfiano/cricket"
+  :homepage "https://git.mfiano.net/mfiano/cricket"
   :depends-on (#:cricket
                #:mfiano-utils
                #:pngload
