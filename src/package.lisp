@@ -4,7 +4,7 @@
   (:local-nicknames
    (#:lp #:lparallel)
    (#:rng #:seedable-rng)
-   (#:u #:golden-utils))
+   (#:u #:mfiano-utils))
   (:use #:cl)
   ;; API
   (:export
@@ -97,7 +97,7 @@
   (:local-nicknames
    (#:int #:%cricket.internal)
    (#:lp #:lparallel)
-   (#:u #:golden-utils))
+   (#:u #:mfiano-utils))
   (:use #:cl)
   (:shadow #:map)
   (:export
@@ -117,8 +117,14 @@
    #:write-image))
 
 (uiop:define-package #:cricket
+  (:mix
+   #:%cricket.modifiers
+   #:%cricket.map #:cl)
+  (:reexport
+   #:%cricket.modifiers
+   #:%cricket.map)
+  (:mix-reexport
+   #:%cricket.generators
+   #:%cricket.internal)
   (:import-from #:arrow-macros #:->)
-  (:mix #:%cricket.modifiers #:%cricket.map #:cl)
-  (:reexport #:%cricket.modifiers #:%cricket.map)
-  (:mix-reexport #:%cricket.generators #:%cricket.internal)
   (:export #:->))

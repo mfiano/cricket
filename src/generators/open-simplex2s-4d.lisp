@@ -7,7 +7,7 @@
    (#:gen #:%cricket.generators)
    (#:int #:%cricket.internal)
    (#:rng #:seedable-rng)
-   (#:u #:golden-utils))
+   (#:u #:mfiano-utils))
   (:use #:cl))
 
 (in-package #:%cricket.generators.open-simplex2s-4d)

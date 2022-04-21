@@ -7,7 +7,7 @@
   (:local-nicknames
    (#:int #:%cricket.internal)
    (#:mod #:%cricket.modifiers)
-   (#:u #:golden-utils))
+   (#:u #:mfiano-utils))
   (:use #:cl)
   (:shadow #:min))
 

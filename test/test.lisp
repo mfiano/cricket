@@ -217,7 +217,7 @@
                       (c:clamp (c:uniform-scale (c:perlin-3d :seed "default") 10) -0.2 0.4))
              '(t t)
              "clamp")
-  (is-values (compare 'modisy-curve
+  (is-values (compare 'modify-curve
                       (c:curve (c:abs (c:uniform-scale (c:perlin-3d :seed "default") 50))
                                :points '((0.1 . 0.43) (0.4 . 0.25) (0.6 . 0.4) (0.65 . 0.8))))
              '(t t)

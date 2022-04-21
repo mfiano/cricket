@@ -280,6 +280,6 @@ me an email or contact me on the usual forums.
 
 ## License
 
-Copyright © Michael Fiano <mail@mfiano.net>.
+Copyright © 2021-2022 Michael Fiano <mail@mfiano.net>.
 
 Licensed under the MIT License.

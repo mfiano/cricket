@@ -1,14 +1,15 @@
 (asdf:defsystem #:cricket
   :description "A library for generating and manipulating coherent noise"
-  :author ("Michael Fiano <mail@mfiano.net>")
+  :author "Michael Fiano <mail@mfiano.net>"
   :license "MIT"
-  :homepage "https://git.mfiano.net/mfiano/cricket"
+  :homepage "https://github.com/mfiano/cricket"
+  :version "0.1.0"
   :encoding :utf-8
   :depends-on (#:arrow-macros
                #:cl-cpus
                #:lparallel
-               #:golden-utils
                #:seedable-rng
+               #:mfiano-utils
                #:uiop
                #:zpng)
   :in-order-to ((asdf:test-op (asdf:test-op #:cricket.test)))
@@ -19,6 +20,7 @@
    (:file "conditions")
    (:file "common")
    (:module "generators"
+    :serial t
     :components
     ((:file "perlin-1d")
      (:file "perlin-2d")
@@ -61,6 +63,7 @@
      (:file "ridged-multifractal-3d")
      (:file "ridged-multifractal-4d")))
    (:module "modifiers"
+    :serial t
     :components
     ((:file "abs")
      (:file "add")
@@ -86,6 +89,7 @@
      (:file "translate")
      (:file "turbulence")))
    (:module "map"
+    :serial t
     :components
     ((:file "color")
      (:file "gradient")

@@ -2,8 +2,9 @@
   :description "Tests for cricket."
   :author "Michael Fiano <mail@mfiano.net>"
   :license "MIT"
+  :homepage "https://github.com/mfiano/cricket"
   :depends-on (#:cricket
-               #:golden-utils
+               #:mfiano-utils
                #:pngload
                #:prove)
   :defsystem-depends-on (#:prove-asdf)

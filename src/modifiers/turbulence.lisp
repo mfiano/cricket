@@ -9,7 +9,7 @@
    (#:int #:%cricket.internal)
    (#:mod #:%cricket.modifiers)
    (#:rng #:seedable-rng)
-   (#:u #:golden-utils))
+   (#:u #:mfiano-utils))
   (:use #:cl))
 
 (in-package #:%cricket.modifiers.turbulence)

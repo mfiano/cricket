@@ -3,7 +3,8 @@
 (defpackage #:cricket.test
   (:local-nicknames
    (#:c #:cricket)
-   (#:u #:golden-utils))
+   (#:png #:pngload)
+   (#:u #:mfiano-utils))
   (:use #:cl
         #:prove))
 
@@ -16,4 +17,4 @@
 ;; the annoyance for now.
 (defun run-tests (object)
   (handler-bind ((asdf/operate:recursive-operate #'muffle-warning))
-    (prove:run object)))
+    (run object)))
