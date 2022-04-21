@@ -3,10 +3,11 @@
   :author "Michael Fiano <mail@mfiano.net>"
   :license "MIT"
   :homepage "https://git.mfiano.net/mfiano/cricket"
-  :depends-on (#:cricket
-               #:mfiano-utils
-               #:pngload
-               #:prove)
+  :depends-on
+  (#:cricket
+   #:mfiano-utils
+   #:pngload
+   #:prove)
   :defsystem-depends-on (#:prove-asdf)
   :pathname "test"
   :serial t

@@ -5,13 +5,14 @@
   :homepage "https://git.mfiano.net/mfiano/cricket"
   :version "0.1.0"
   :encoding :utf-8
-  :depends-on (#:arrow-macros
-               #:cl-cpus
-               #:lparallel
-               #:seedable-rng
-               #:mfiano-utils
-               #:uiop
-               #:zpng)
+  :depends-on
+  (#:arrow-macros
+   #:cl-cpus
+   #:lparallel
+   #:seedable-rng
+   #:mfiano-utils
+   #:uiop
+   #:zpng)
   :in-order-to ((asdf:test-op (asdf:test-op #:cricket.test)))
   :pathname "src"
   :serial t
